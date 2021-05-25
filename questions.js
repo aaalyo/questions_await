@@ -57,8 +57,8 @@ const askQuestionAge = async () => {
                 reject('Age has to be over zero and a number');
                 return;
             }
-            
-            fulfil(age);
+            const ageNum = parseInt(age)
+            fulfil(ageNum);
         })
     })
 };
